@@ -14736,8 +14736,8 @@
 	//         </slot>
 	//         <slot name="modal-footer" v-if="type !== 'message'">
 	//           <div class="modal-footer">
-	//             <n-button type="primary" size="large" @click="onOk">{{ okText }}</d-button>
-	//             <n-button size="large" @click="close">{{ cancelText }}</d-button>
+	//             <n-button type="primary" size="large" @click="onOk">{{ okText }}</n-button>
+	//             <n-button size="large" @click="close">{{ cancelText }}</n-button>
 	//           </div>
 	//         </slot>
 	//       </div>
@@ -15318,7 +15318,7 @@
 /* 89 */
 /***/ (function(module, exports) {
 
-	module.exports = "\n<div role=\"dialog\"\n  v-bind:class=\"{\n    'd-modal': true,\n    'fade': effect === 'fade',\n    'd-message-box': type === 'message',\n  }\"\n>\n  <div class=\"modal-dialog\" role=\"document\" v-bind:style=\"{width: optionalWidth}\">\n    <div class=\"modal-content\">\n      <slot name=\"modal-header\" v-if=\"type !== 'message'\">\n        <div class=\"modal-header\">\n          <i class=\"iconhandle close\" @click=\"close\">&#xe609;</i>\n          <h4 class=\"modal-title\">\n            <slot name=\"title\">\n              {{title}}\n            </slot>\n          </h4>\n        </div>\n      </slot>\n      <slot name=\"modal-body\">\n        <div class=\"modal-body\">\n          <template v-if=\"type === 'message'\">\n            <p>\n              <i class=\"iconhandle success\" v-if=\"messageType === 'success'\">&#xe629;</i>\n              <i class=\"iconhandle error\" v-if=\"messageType === 'error'\">&#xe605;</i>\n              {{title}}\n            </p>\n            <p class=\"desc\" v-if=\"messageDesc\">\n              {{messageDesc}}\n            </p>\n          </template>\n          <template v-else>\n            <p>{{{description}}}</p>\n          </template>\n        </div>\n      </slot>\n      <slot name=\"modal-footer\" v-if=\"type !== 'message'\">\n        <div class=\"modal-footer\">\n          <n-button type=\"primary\" size=\"large\" @click=\"onOk\">{{ okText }}</d-button>\n          <n-button size=\"large\" @click=\"close\">{{ cancelText }}</d-button>\n        </div>\n      </slot>\n    </div>\n  </div>\n</div>\n";
+	module.exports = "\n<div role=\"dialog\"\n  v-bind:class=\"{\n    'd-modal': true,\n    'fade': effect === 'fade',\n    'd-message-box': type === 'message',\n  }\"\n>\n  <div class=\"modal-dialog\" role=\"document\" v-bind:style=\"{width: optionalWidth}\">\n    <div class=\"modal-content\">\n      <slot name=\"modal-header\" v-if=\"type !== 'message'\">\n        <div class=\"modal-header\">\n          <i class=\"iconhandle close\" @click=\"close\">&#xe609;</i>\n          <h4 class=\"modal-title\">\n            <slot name=\"title\">\n              {{title}}\n            </slot>\n          </h4>\n        </div>\n      </slot>\n      <slot name=\"modal-body\">\n        <div class=\"modal-body\">\n          <template v-if=\"type === 'message'\">\n            <p>\n              <i class=\"iconhandle success\" v-if=\"messageType === 'success'\">&#xe629;</i>\n              <i class=\"iconhandle error\" v-if=\"messageType === 'error'\">&#xe605;</i>\n              {{title}}\n            </p>\n            <p class=\"desc\" v-if=\"messageDesc\">\n              {{messageDesc}}\n            </p>\n          </template>\n          <template v-else>\n            <p>{{{description}}}</p>\n          </template>\n        </div>\n      </slot>\n      <slot name=\"modal-footer\" v-if=\"type !== 'message'\">\n        <div class=\"modal-footer\">\n          <n-button type=\"primary\" size=\"large\" @click=\"onOk\">{{ okText }}</n-button>\n          <n-button size=\"large\" @click=\"close\">{{ cancelText }}</n-button>\n        </div>\n      </slot>\n    </div>\n  </div>\n</div>\n";
 
 /***/ }),
 /* 90 */,
@@ -21937,7 +21937,7 @@
 	//         </slot>
 	//         <div class="upload-btn">
 	//           <fileupload class="file-upload" name="file" :post-action="uploadUrl" :put-action="uploadUrl" :extensions="extensions" :accept="accept" :size="size"></fileupload>
-	//           <n-button>选择上传</d-button>
+	//           <n-button>选择上传</n-button>
 	//         </div>
 	//       </div>
 	//     </div>
@@ -22159,7 +22159,7 @@
 /* 269 */
 /***/ (function(module, exports) {
 
-	module.exports = "\n<div class=\"d-image-upload-container\">\n  <div class=\"img\" v-bind:class=\"{\n    'img-uploaded': !!value\n  }\">\n    <p>\n      <img :src=\"value\" alt=\"\">\n    </p>\n  </div>\n  <div class=\"upload-area\">\n    <div class=\"upload-cell\">\n      <slot name=\"upload-tip\">\n      </slot>\n      <div class=\"upload-btn\">\n        <fileupload class=\"file-upload\" name=\"file\" :post-action=\"uploadUrl\" :put-action=\"uploadUrl\" :extensions=\"extensions\" :accept=\"accept\" :size=\"size\"></fileupload>\n        <n-button>选择上传</d-button>\n      </div>\n    </div>\n  </div>\n  <p class=\"invalid\" v-show=\"errorTip\">\n    <i class=\"iconhandle\">&#xe62a;</i>\n    {{errorTip}}\n  </p>\n</div>\n";
+	module.exports = "\n<div class=\"d-image-upload-container\">\n  <div class=\"img\" v-bind:class=\"{\n    'img-uploaded': !!value\n  }\">\n    <p>\n      <img :src=\"value\" alt=\"\">\n    </p>\n  </div>\n  <div class=\"upload-area\">\n    <div class=\"upload-cell\">\n      <slot name=\"upload-tip\">\n      </slot>\n      <div class=\"upload-btn\">\n        <fileupload class=\"file-upload\" name=\"file\" :post-action=\"uploadUrl\" :put-action=\"uploadUrl\" :extensions=\"extensions\" :accept=\"accept\" :size=\"size\"></fileupload>\n        <n-button>选择上传</n-button>\n      </div>\n    </div>\n  </div>\n  <p class=\"invalid\" v-show=\"errorTip\">\n    <i class=\"iconhandle\">&#xe62a;</i>\n    {{errorTip}}\n  </p>\n</div>\n";
 
 /***/ }),
 /* 270 */
@@ -22708,8 +22708,8 @@
 	//           <input data-wysihtml5-dialog-field="href" value="http://" class="form-control">
 	//         </div>
 	//         <div class="link-btns">
-	//           <n-button data-wysihtml5-dialog-action="cancel">取消</d-button>
-	//           <n-button data-wysihtml5-dialog-action="save" type="primary">确认</d-button>
+	//           <n-button data-wysihtml5-dialog-action="cancel">取消</n-button>
+	//           <n-button data-wysihtml5-dialog-action="save" type="primary">确认</n-button>
 	//         </div>
 	//       </div>
 	
@@ -22726,15 +22726,15 @@
 	//               <p slot="upload-tip">
 	//                 图片宽为{{imageWidth}}px格式为jpg、jpeg、png
 	//               </p>
-	//             </d-imageupload>
+	//             </n-imageupload>
 	//             <input type="hidden" data-wysihtml5-dialog-field="src" :value="imageUrl" v-el:imageurl>
 	//           </div>
 	//           <div class="modal-footer" slot="modal-footer">
-	//             <n-button type="primary" data-wysihtml5-dialog-action="save" v-if="imageUrl.length !== 0">添加</d-button>
-	//             <n-button type="primary" disabled v-else>添加</d-button>
-	//             <n-button data-wysihtml5-dialog-action="cancel">取消</d-button>
+	//             <n-button type="primary" data-wysihtml5-dialog-action="save" v-if="imageUrl.length !== 0">添加</n-button>
+	//             <n-button type="primary" disabled v-else>添加</n-button>
+	//             <n-button data-wysihtml5-dialog-action="cancel">取消</n-button>
 	//           </div>
-	//         </d-modal>
+	//         </n-modal>
 	//       </div>
 	//     </div>
 	//     <textarea id="{{editorId}}" placeholder="{{placeholder}}" :value="description">
@@ -22748,7 +22748,7 @@
 /* 279 */
 /***/ (function(module, exports) {
 
-	module.exports = "\n<div class=\"richeditor\" v-el:richeditor>\n  <div class=\"richeditor-toolbar\" id=\"{{toolbarId}}\" style=\"display: none;\">\n    <a data-wysihtml5-command=\"formatBlock\" class=\"iconhandle\" data-wysihtml5-command-value=\"h4\" v-if=\"toolbar.formatBlock\">&#xe62d;</a>\n    <a data-wysihtml5-command=\"formatBlock\" class=\"iconhandle\" data-wysihtml5-command-value=\"p\" v-if=\"toolbar.formatBlockP\">&#xe656;</a>\n    <a data-wysihtml5-command=\"fontSize\" class=\"iconhandle\" data-wysihtml5-command-value=\"large\" v-if=\"toolbar.fontSize\">&#xe62e;</a>\n    <a data-wysihtml5-command=\"bold\" class=\"iconhandle\" title=\"CTRL+B\" v-if=\"toolbar.bold\">&#xe622;</a>\n    <a data-wysihtml5-command=\"foreColor\" class=\"iconhandle foreColor\" data-wysihtml5-command-value=\"red\" v-if=\"toolbar.foreColor\">&#xe625;</a>\n    <a data-wysihtml5-command=\"createLink\" class=\"iconhandle create-link\" v-if=\"toolbar.createLink\">&#xe604;</a>\n    <a data-wysihtml5-command=\"insertUnorderedList\" class=\"iconhandle unordered-list\" v-if=\"toolbar.insertUnorderedList\">&#xe626;</a>\n    <a data-wysihtml5-command=\"insertOrderedList\" class=\"iconhandle ordered-list\" v-if=\"toolbar.insertOrderedList\">&#xe627;</a>\n    <a data-wysihtml5-command=\"insertImage\" class=\"iconhandle insert-image\" v-if=\"toolbar.insertImage\" @click=\"insertImageClick\">&#xe623;</a>\n\n    <div class=\"wysihtml5-link-modal\" data-wysihtml5-dialog=\"createLink\" style=\"display: none;\" v-if=\"toolbar.createLink\">\n      <div class=\"form-group\">\n        <label>\n          地址：\n        </label>\n        <input data-wysihtml5-dialog-field=\"href\" value=\"http://\" class=\"form-control\">\n      </div>\n      <div class=\"link-btns\">\n        <n-button data-wysihtml5-dialog-action=\"cancel\">取消</d-button>\n        <n-button data-wysihtml5-dialog-action=\"save\" type=\"primary\">确认</d-button>\n      </div>\n    </div>\n\n    <div class=\"wysihtml5-image-modal\" data-wysihtml5-dialog=\"insertImage\" style=\"display: none;\" v-if=\"toolbar.insertImage\">\n      <n-modal title=\"添加图片\" :width=\"570\" :show.sync=\"imageModalShow\">\n        <div class=\"modal-header\" slot=\"modal-header\">\n          <i class=\"iconhandle close\" data-wysihtml5-dialog-action=\"cancel\">&#xe609;</i>\n          <h4 class=\"modal-title\" > \n            添加图片\n          </h4>\n        </div>\n        <div class=\"modal-body\" slot=\"modal-body\">\n          <n-imageupload :url.sync=\"imageUrl\" :width=\"imageWidth\">\n            <p slot=\"upload-tip\">\n              图片宽为{{imageWidth}}px格式为jpg、jpeg、png\n            </p>\n          </d-imageupload>\n          <input type=\"hidden\" data-wysihtml5-dialog-field=\"src\" :value=\"imageUrl\" v-el:imageurl>\n        </div>\n        <div class=\"modal-footer\" slot=\"modal-footer\">\n          <n-button type=\"primary\" data-wysihtml5-dialog-action=\"save\" v-if=\"imageUrl.length !== 0\">添加</d-button>\n          <n-button type=\"primary\" disabled v-else>添加</d-button>\n          <n-button data-wysihtml5-dialog-action=\"cancel\">取消</d-button>\n        </div>\n      </d-modal>\n    </div>\n  </div>\n  <textarea id=\"{{editorId}}\" placeholder=\"{{placeholder}}\" :value=\"description\">\n  </textarea>\n</div>\n";
+	module.exports = "\n<div class=\"richeditor\" v-el:richeditor>\n  <div class=\"richeditor-toolbar\" id=\"{{toolbarId}}\" style=\"display: none;\">\n    <a data-wysihtml5-command=\"formatBlock\" class=\"iconhandle\" data-wysihtml5-command-value=\"h4\" v-if=\"toolbar.formatBlock\">&#xe62d;</a>\n    <a data-wysihtml5-command=\"formatBlock\" class=\"iconhandle\" data-wysihtml5-command-value=\"p\" v-if=\"toolbar.formatBlockP\">&#xe656;</a>\n    <a data-wysihtml5-command=\"fontSize\" class=\"iconhandle\" data-wysihtml5-command-value=\"large\" v-if=\"toolbar.fontSize\">&#xe62e;</a>\n    <a data-wysihtml5-command=\"bold\" class=\"iconhandle\" title=\"CTRL+B\" v-if=\"toolbar.bold\">&#xe622;</a>\n    <a data-wysihtml5-command=\"foreColor\" class=\"iconhandle foreColor\" data-wysihtml5-command-value=\"red\" v-if=\"toolbar.foreColor\">&#xe625;</a>\n    <a data-wysihtml5-command=\"createLink\" class=\"iconhandle create-link\" v-if=\"toolbar.createLink\">&#xe604;</a>\n    <a data-wysihtml5-command=\"insertUnorderedList\" class=\"iconhandle unordered-list\" v-if=\"toolbar.insertUnorderedList\">&#xe626;</a>\n    <a data-wysihtml5-command=\"insertOrderedList\" class=\"iconhandle ordered-list\" v-if=\"toolbar.insertOrderedList\">&#xe627;</a>\n    <a data-wysihtml5-command=\"insertImage\" class=\"iconhandle insert-image\" v-if=\"toolbar.insertImage\" @click=\"insertImageClick\">&#xe623;</a>\n\n    <div class=\"wysihtml5-link-modal\" data-wysihtml5-dialog=\"createLink\" style=\"display: none;\" v-if=\"toolbar.createLink\">\n      <div class=\"form-group\">\n        <label>\n          地址：\n        </label>\n        <input data-wysihtml5-dialog-field=\"href\" value=\"http://\" class=\"form-control\">\n      </div>\n      <div class=\"link-btns\">\n        <n-button data-wysihtml5-dialog-action=\"cancel\">取消</n-button>\n        <n-button data-wysihtml5-dialog-action=\"save\" type=\"primary\">确认</n-button>\n      </div>\n    </div>\n\n    <div class=\"wysihtml5-image-modal\" data-wysihtml5-dialog=\"insertImage\" style=\"display: none;\" v-if=\"toolbar.insertImage\">\n      <n-modal title=\"添加图片\" :width=\"570\" :show.sync=\"imageModalShow\">\n        <div class=\"modal-header\" slot=\"modal-header\">\n          <i class=\"iconhandle close\" data-wysihtml5-dialog-action=\"cancel\">&#xe609;</i>\n          <h4 class=\"modal-title\" > \n            添加图片\n          </h4>\n        </div>\n        <div class=\"modal-body\" slot=\"modal-body\">\n          <n-imageupload :url.sync=\"imageUrl\" :width=\"imageWidth\">\n            <p slot=\"upload-tip\">\n              图片宽为{{imageWidth}}px格式为jpg、jpeg、png\n            </p>\n          </n-imageupload>\n          <input type=\"hidden\" data-wysihtml5-dialog-field=\"src\" :value=\"imageUrl\" v-el:imageurl>\n        </div>\n        <div class=\"modal-footer\" slot=\"modal-footer\">\n          <n-button type=\"primary\" data-wysihtml5-dialog-action=\"save\" v-if=\"imageUrl.length !== 0\">添加</n-button>\n          <n-button type=\"primary\" disabled v-else>添加</n-button>\n          <n-button data-wysihtml5-dialog-action=\"cancel\">取消</n-button>\n        </div>\n      </n-modal>\n    </div>\n  </div>\n  <textarea id=\"{{editorId}}\" placeholder=\"{{placeholder}}\" :value=\"description\">\n  </textarea>\n</div>\n";
 
 /***/ })
 /******/ ]);

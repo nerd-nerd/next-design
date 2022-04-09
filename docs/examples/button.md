@@ -24,9 +24,9 @@ export default {
 :::demo Button 组件默认提供7种主题，由`type`属性来定义，默认为`default`。
 
 ```html
-<n-button>默认按钮</d-button>
-<n-button type="primary">主要按钮</d-button>
-<n-button type="text">文字按钮</d-button>
+<n-button>默认按钮</n-button>
+<n-button type="primary">主要按钮</n-button>
+<n-button type="text">文字按钮</n-button>
 ```
 :::
 
@@ -37,10 +37,10 @@ export default {
 :::demo 你可以使用`disabled`属性来定义按钮是否可用，它接受一个`Boolean`值。
 
 ```html
-<n-button :disabled="disabled">默认按钮</d-button>
-<n-button type="primary" :disabled="true">主要按钮</d-button>
-<n-button type="text" :disabled="true">文字按钮</d-button>
-<n-button icon="&#xe61d;" :disabled="true">批量删除</d-button>
+<n-button :disabled="disabled">默认按钮</n-button>
+<n-button type="primary" :disabled="true">主要按钮</n-button>
+<n-button type="text" :disabled="true">文字按钮</n-button>
+<n-button icon="&#xe61d;" :disabled="true">批量删除</n-button>
 ```
 :::
 
@@ -50,7 +50,7 @@ export default {
 
 :::demo 目前只提供了 `warning` 样式，显示为橘色，如有其他颜色需求可以添加不同的type。
 ```html
-<n-button type="warning">警告按钮</d-button>
+<n-button type="warning">警告按钮</n-button>
 ```
 :::
 
@@ -61,9 +61,9 @@ export default {
 :::demo 设置`icon`属性为对应的iconfont值即可。
 
 ```html
-<n-button icon="&#xe61d;">批量删除</d-button>
-<n-button icon="&#xe61d;" type="primary">批量删除</d-button>
-<n-button icon="&#xe61d;"></d-button>
+<n-button icon="&#xe61d;">批量删除</n-button>
+<n-button icon="&#xe61d;" type="primary">批量删除</n-button>
+<n-button icon="&#xe61d;"></n-button>
 ```
 :::
 
@@ -74,8 +74,8 @@ Button组件提供除了默认值以外，还有一种大尺寸按钮，可以�
 :::demo 额外的尺寸：`large`，通过设置`size`属性来配置它们。
 
 ```html
-<n-button type="primary" size="large">大型按钮</d-button>
-<n-button type="primary">正常按钮</d-button>
+<n-button type="primary" size="large">大型按钮</n-button>
+<n-button type="primary">正常按钮</n-button>
 ```
 :::
 
@@ -85,8 +85,8 @@ Button组件可以设置一个`to`属性，用于设置点击时的跳转链接�
 
 :::demo 设置`to`为字符串跳转到对应的`url`，也可以设置为一个路由对象。
 ```html
-<n-button type="primary" :to="{ path: '/'}">首页</d-button>
-<n-button type="primary" to="http://baidu.com">百度</d-button>
+<n-button type="primary" :to="{ path: '/'}">首页</n-button>
+<n-button type="primary" to="http://baidu.com">百度</n-button>
 ```
 :::
 
@@ -95,7 +95,7 @@ Button组件可以设置一个`to`属性，用于设置点击时的跳转链接�
 :::demo 可以设置一个按钮点击的回调函数。
 
 ```html
-<n-button @click="handleClick">普通按钮</d-button>
+<n-button @click="handleClick">普通按钮</n-button>
 ```
 :::
 

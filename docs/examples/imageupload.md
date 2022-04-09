@@ -40,7 +40,7 @@ export default {
   <p slot="upload-tip">
     尺寸为100*100像素，格式为jpg、png，图片大小不可大于1M。
   </p>
-</d-imageupload>
+</n-imageupload>
 ```
 :::
 
@@ -51,7 +51,7 @@ export default {
 :::demo 上传多张图片。
 ```html
 <n-multi-imageupload class="multi-images" upload-url="/upload/image" :values.sync="images" :width="640">
-</d-multi-imageupload>
+</n-multi-imageupload>
 ```
 :::
 

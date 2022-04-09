@@ -19,7 +19,7 @@
 :::demo 在`d-checkbox`元素中双向绑定`checked`属性即可。
 
 ```html
-<n-checkbox :checked.sync="checked">备选项</d-checkbox>
+<n-checkbox :checked.sync="checked">备选项</n-checkbox>
 
 <script>
   export default {
@@ -40,7 +40,7 @@
 :::demo 在`d-checkbox`元素上设置`disabled`属性即可。
 
 ```html
-<n-checkbox :checked.sync="checked2" disabled>备选项</d-checkbox>
+<n-checkbox :checked.sync="checked2" disabled>备选项</n-checkbox>
 
 <script>
   export default {
@@ -62,12 +62,12 @@
 
 ```html
 <n-checkbox-group :value.sync="checkList">
-  <n-checkbox :name="1">选项1</d-checkbox>
-  <n-checkbox :name="2">选项2</d-checkbox>
-  <n-checkbox :name="3">选项3</d-checkbox>
-  <n-checkbox :name="4" disabled>选项4</d-checkbox>
-  <n-checkbox :name="5" disabled>选项5</d-checkbox>
-</d-checkbox-group>
+  <n-checkbox :name="1">选项1</n-checkbox>
+  <n-checkbox :name="2">选项2</n-checkbox>
+  <n-checkbox :name="3">选项3</n-checkbox>
+  <n-checkbox :name="4" disabled>选项4</n-checkbox>
+  <n-checkbox :name="5" disabled>选项5</n-checkbox>
+</n-checkbox-group>
 
 <script>
   export default {

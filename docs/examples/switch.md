@@ -24,8 +24,8 @@ export default {
 :::demo 通常只需要用到双向绑定 `status` 属性即可。
 
 ```html
-<n-switch :status.sync="status1"></d-switch>
-<n-switch :status.sync="status2"></d-switch>
+<n-switch :status.sync="status1"></n-switch>
+<n-switch :status.sync="status2"></n-switch>
 
 <script>
 export default {
@@ -45,7 +45,7 @@ export default {
 :::demo 设置`disabled`为`true`可以禁用该组件。
 
 ```html
-<n-switch :status.sync="status1" :disabled="true"></d-switch>
+<n-switch :status.sync="status1" :disabled="true"></n-switch>
 
 <script>
 export default {

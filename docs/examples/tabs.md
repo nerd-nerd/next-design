@@ -12,11 +12,11 @@
 <n-tabs>
   <n-tab header="在线充值">
     在线充值
-  </d-tab>
+  </n-tab>
   <n-tab header="转账汇款">
     转账汇款
-  </d-tab>
-</d-tabs>
+  </n-tab>
+</n-tabs>
 ```
 :::
 

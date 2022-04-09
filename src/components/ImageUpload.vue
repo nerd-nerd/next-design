@@ -13,7 +13,7 @@
         </slot>
         <div class="upload-btn">
           <fileupload class="file-upload" name="file" :post-action="uploadUrl" :put-action="uploadUrl" :extensions="extensions" :accept="accept" :size="size"></fileupload>
-          <n-button>选择上传</d-button>
+          <n-button>选择上传</n-button>
         </div>
       </div>
     </div>

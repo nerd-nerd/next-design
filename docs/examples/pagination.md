@@ -23,7 +23,7 @@ export default {
 
 :::demo 需要设置数据总条数`total`，和当前分页数`currentPage`，以及监听页数变化的函数。
 ```html
-<n-pagination :total="188" :current-page="currPage" @change="onPageChange"></d-pagination>
+<n-pagination :total="188" :current-page="currPage" @change="onPageChange"></n-pagination>
 
 <script>
 export default {
@@ -50,18 +50,18 @@ export default {
 ```html
 <n-pagination :total="188" :current-page="currPage" :batch="true" :selected.sync="selectedLength" :all.sync="allChecked" @change="onPageChange">
   <template slot="batch-btns">
-    <n-checkbox></d-checkbox>
+    <n-checkbox></n-checkbox>
     <span>已选择 1/10</span>
     <n-button class="btn btn-default btn-batch" v-bind:class="{'disabled': selectedLength === 0}" @click="selectedLength !== 0 && batchClick(true)">
       <i class="iconhandle">&#xe60e;</i>
       批量上架
-    </d-button>
+    </n-button>
     <n-button class="btn btn-default btn-batch btn-delete" v-bind:class="{'disabled': selectedLength === 0}" @click="selectedLength !== 0 && batchClick(false)">
       <i class="iconhandle">&#xe61d;</i>
       批量删除
-    </d-button>
+    </n-button>
   </template>
-</d-pagination>
+</n-pagination>
 
 <script>
 export default {

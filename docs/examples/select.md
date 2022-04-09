@@ -34,7 +34,7 @@ export default {
 
 :::demo `options`属性需传入一个数组，其值为可以选择的选项。`value`为选中的值。`idName`对应每个选项的`id`的名称，比如为`appId`，默认为`id`。`label-name`为选项名称的字段，默认为`label`。
 ```html
-<n-select :options="appList" :value.sync="appId" id-name="appId" label-name="name" @select="selectItem"></d-select>
+<n-select :options="appList" :value.sync="appId" id-name="appId" label-name="name" @select="selectItem"></n-select>
 
 <script>
 export default {
@@ -70,7 +70,7 @@ export default {
 
 :::demo 传入一个`disabled`属性即可。
 ```html
-<n-select :options="appList" :value.sync="appId" id-name="appId" label-name="name" disabled></d-select>
+<n-select :options="appList" :value.sync="appId" id-name="appId" label-name="name" disabled></n-select>
 
 <script>
 export default {

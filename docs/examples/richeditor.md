@@ -17,7 +17,7 @@ export default {
 :::demo 使用时需要在页面中引入`wysihtml5`，
 ```html
 <n-richeditor toolbar-id="desc-toolbar" editor-id="desc-editor" placeholder="此奖品的介绍文案以及使用说明文案" :description="value" :value.sync="value">
-</d-richeditor>
+</n-richeditor>
 
 <script>
 export default {

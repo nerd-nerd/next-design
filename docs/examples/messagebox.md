@@ -31,7 +31,7 @@ export default {
 :::demo MessageBox成功提示。
 
 ```html
-<n-button type="text" @click="open1">点我弹出MessageBox</d-button>
+<n-button type="text" @click="open1">点我弹出MessageBox</n-button>
 
 <script>
 export default {
@@ -54,8 +54,8 @@ export default {
 :::demo MessageBox暂时只有`success`和`error`两种状态，通过`type`参数传入对应`type`即可，默认为`success`。
 
 ```html
-<n-button type="text" @click="open1">点我弹出成功MessageBox</d-button>
-<n-button type="text" @click="open2">点我弹出错误MessageBox</d-button>
+<n-button type="text" @click="open1">点我弹出成功MessageBox</n-button>
+<n-button type="text" @click="open2">点我弹出错误MessageBox</n-button>
 
 <script>
 export default {

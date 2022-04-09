@@ -19,8 +19,8 @@
           <input data-wysihtml5-dialog-field="href" value="http://" class="form-control">
         </div>
         <div class="link-btns">
-          <n-button data-wysihtml5-dialog-action="cancel">取消</d-button>
-          <n-button data-wysihtml5-dialog-action="save" type="primary">确认</d-button>
+          <n-button data-wysihtml5-dialog-action="cancel">取消</n-button>
+          <n-button data-wysihtml5-dialog-action="save" type="primary">确认</n-button>
         </div>
       </div>
 
@@ -37,15 +37,15 @@
               <p slot="upload-tip">
                 图片宽为{{imageWidth}}px格式为jpg、jpeg、png
               </p>
-            </d-imageupload>
+            </n-imageupload>
             <input type="hidden" data-wysihtml5-dialog-field="src" :value="imageUrl" v-el:imageurl>
           </div>
           <div class="modal-footer" slot="modal-footer">
-            <n-button type="primary" data-wysihtml5-dialog-action="save" v-if="imageUrl.length !== 0">添加</d-button>
-            <n-button type="primary" disabled v-else>添加</d-button>
-            <n-button data-wysihtml5-dialog-action="cancel">取消</d-button>
+            <n-button type="primary" data-wysihtml5-dialog-action="save" v-if="imageUrl.length !== 0">添加</n-button>
+            <n-button type="primary" disabled v-else>添加</n-button>
+            <n-button data-wysihtml5-dialog-action="cancel">取消</n-button>
           </div>
-        </d-modal>
+        </n-modal>
       </div>
     </div>
     <textarea id="{{editorId}}" placeholder="{{placeholder}}" :value="description">

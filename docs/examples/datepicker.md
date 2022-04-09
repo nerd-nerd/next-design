@@ -49,7 +49,7 @@ export default {
 
 :::demo 基本用法只需双向绑定`value`属性即可，输出格式为`yyyy-MM-dd`，你也可以传入`format`属性为自己想要的输出格式。
 ```html
-<n-datepicker :value.sync="date" placeholder="请选择时间"></d-datepicker>
+<n-datepicker :value.sync="date" placeholder="请选择时间"></n-datepicker>
 
 <script>
 export default {
@@ -69,7 +69,7 @@ export default {
 
 :::demo 传入一个`disabledDate`的函数，来处理禁用日期逻辑，这个处理函数接受当前日期为参数。
 ```html
-<n-datepicker :value.sync="date" placeholder="请选择时间" :disabled-date="disabledDate"></d-datepicker>
+<n-datepicker :value.sync="date" placeholder="请选择时间" :disabled-date="disabledDate"></n-datepicker>
 
 <script>
 export default {
@@ -99,7 +99,7 @@ export default {
 
 :::demo 时间精确到时，也就是整点时间。传入一个`time`属性即可。
 ```html
-<n-datepicker :value.sync="date" placeholder="请选择时间" :disabled-date="disabledDate" format="yyyy-MM-dd hh:ii" time></d-datepicker>
+<n-datepicker :value.sync="date" placeholder="请选择时间" :disabled-date="disabledDate" format="yyyy-MM-dd hh:ii" time></n-datepicker>
 
 <script>
 export default {
@@ -129,7 +129,7 @@ export default {
 
 :::demo 时间精确到分。需传入一个`time`和`minute`属性。
 ```html
-<n-datepicker :value.sync="date" placeholder="请选择时间" :disabled-date="disabledDate" format="yyyy-MM-dd hh:ii" time minute></d-datepicker>
+<n-datepicker :value.sync="date" placeholder="请选择时间" :disabled-date="disabledDate" format="yyyy-MM-dd hh:ii" time minute></n-datepicker>
 
 <script>
 export default {
@@ -159,7 +159,7 @@ export default {
 
 :::demo 可以使用`d-daterangepicker`元素显示一个时间区间。
 ```html
-<n-daterangepicker :start.sync="start" :end.sync="end" placeholder="请选择时间" :error-show="true" :range="7"></d-daterangepicker>
+<n-daterangepicker :start.sync="start" :end.sync="end" placeholder="请选择时间" :error-show="true" :range="7"></n-daterangepicker>
 
 <script>
 export default {

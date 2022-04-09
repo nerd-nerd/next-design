@@ -10,11 +10,11 @@
 
 ```html
 <n-breadcrumb>
-  <n-breadcrumb-item :to="{ path: '/' }">首页</d-breadcrumb-item>
-  <n-breadcrumb-item>活动管理</d-breadcrumb-item>
-  <n-breadcrumb-item>活动列表</d-breadcrumb-item>
-  <n-breadcrumb-item>活动详情</d-breadcrumb-item>
-</d-breadcrumb>
+  <n-breadcrumb-item :to="{ path: '/' }">首页</n-breadcrumb-item>
+  <n-breadcrumb-item>活动管理</n-breadcrumb-item>
+  <n-breadcrumb-item>活动列表</n-breadcrumb-item>
+  <n-breadcrumb-item>活动详情</n-breadcrumb-item>
+</n-breadcrumb>
 ```
 :::
 

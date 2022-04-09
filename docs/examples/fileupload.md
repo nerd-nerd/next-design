@@ -6,6 +6,6 @@
 
 :::demo 具体请看[vue-upload-component](https://github.com/lian-yue/vue-upload-component/)
 ```html
-<n-fileupload name="file" post-action="/upyun/adminUploadImage" put-action="/upyun/adminUploadImage"></d-fileupload>
+<n-fileupload name="file" post-action="/upyun/adminUploadImage" put-action="/upyun/adminUploadImage"></n-fileupload>
 ```
 :::

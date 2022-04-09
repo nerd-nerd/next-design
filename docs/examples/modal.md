@@ -18,10 +18,10 @@ export default {
 
 :::demo `modal-header`、`modal-body`和`modal-footer`都可以利用内容分发去覆盖，当然你也可以使用默认的。
 ```html
-<n-button type="text" @click="modal1Show = true">点击打开弹框</d-button>
+<n-button type="text" @click="modal1Show = true">点击打开弹框</n-button>
 
 <n-modal title="modal标题" description="modal说明" :show.sync="modal1Show" width="400">
-</d-modal>
+</n-modal>
 ```
 :::
 
@@ -29,7 +29,7 @@ export default {
 
 :::demo 利用内容分发覆盖`modal-header`、`modal-body`和`modal-footer`。
 ```html
-<n-button type="text" @click="modal2Show = true">点击打开弹框</d-button>
+<n-button type="text" @click="modal2Show = true">点击打开弹框</n-button>
 
 <n-modal title="modal标题" :show.sync="modal2Show" width="400">
   <template slot="modal-body">
@@ -39,10 +39,10 @@ export default {
   </template>
   <template slot="modal-footer">
     <div class="modal-footer">
-      <n-button type="primary" @click="modal2Show = false">确定</d-button>
+      <n-button type="primary" @click="modal2Show = false">确定</n-button>
     </div>
   </template>
-</d-modal>
+</n-modal>
 ```
 :::
 

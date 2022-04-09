@@ -16,10 +16,10 @@
 ```html
 <n-alert :closable="false">
   这是一个不能关闭的alert
-</d-alert>
+</n-alert>
 <n-alert>
   这是一个可以关闭的alert
-</d-alert>
+</n-alert>
 ```
 :::
 

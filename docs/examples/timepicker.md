@@ -20,7 +20,7 @@ export default {
 
 :::demo 默认的`format`为`HH:mm`，可以设置一个自定义的`format`，还需要设置一个`time-value`的双向绑定来同步设置的时间。具体用法请看[Vue Timepicker](https://phoenixwong.github.io/vue-timepicker/)
 ```html
-<n-timepicker format="HH:mm:ss" :time-value.sync="time"></d-timepicker>
+<n-timepicker format="HH:mm:ss" :time-value.sync="time"></n-timepicker>
 
 <script>
 export default {

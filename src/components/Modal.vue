@@ -37,8 +37,8 @@
         </slot>
         <slot name="modal-footer" v-if="type !== 'message'">
           <div class="modal-footer">
-            <n-button type="primary" size="large" @click="onOk">{{ okText }}</d-button>
-            <n-button size="large" @click="close">{{ cancelText }}</d-button>
+            <n-button type="primary" size="large" @click="onOk">{{ okText }}</n-button>
+            <n-button size="large" @click="close">{{ cancelText }}</n-button>
           </div>
         </slot>
       </div>
